@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intergration", "Intergration", "{1A9D0A38-90AD-42F2-B735-A3D39B3F306A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{E23EC58A-2E78-4232-8B6A-20622C332E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KejaHUnt_PropertiesAPI", "KejaHUnt_PropertiesAPI\KejaHUnt_PropertiesAPI.csproj", "{B499A1F6-9713-4D23-9CFF-CC434AAD1A47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B499A1F6-9713-4D23-9CFF-CC434AAD1A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B499A1F6-9713-4D23-9CFF-CC434AAD1A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B499A1F6-9713-4D23-9CFF-CC434AAD1A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B499A1F6-9713-4D23-9CFF-CC434AAD1A47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B499A1F6-9713-4D23-9CFF-CC434AAD1A47} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C220280-1CF9-431C-AFDF-D8DE022A2C4F}
+	EndGlobalSection
+EndGlobal
