@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace KejaHUnt_PropertiesAPI.Models.Dto
+namespace KejaHUnT_TenantAPI.Models.Dto
 {
     public class UnitDto
     {
-        public int Id { get; set; }
         [Precision(18, 2)]
         public decimal Price { get; set; }
         public string Type { get; set; }

@@ -1,4 +1,5 @@
 ﻿using KejaHUnt_PropertiesAPI.Models.Domain;
+using KejaHUnt_PropertiesAPI.Models.Dto;
 
 namespace KejaHUnt_PropertiesAPI.Repositories.Interface
 {
@@ -10,7 +11,7 @@ namespace KejaHUnt_PropertiesAPI.Repositories.Interface
 
         Task<Property?> GetPropertyByIdAsync(int id);
 
-        Task<Property?> UpdateAsync(Property property);
+        Task<Property?> UpdateAsync(int id, UpdatePropertyRequestDto property);
 
         Task<Property?> DeleteAync(int id);
     }

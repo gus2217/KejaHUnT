@@ -11,6 +11,10 @@ namespace KejaHUnt_PropertiesAPI.Utility
         {
             CreateMap<Property, CreatePropertyRequestDto>().ReverseMap();
             CreateMap<Unit, CreateUnitRequestDto>().ReverseMap();
+            CreateMap<Property, PropertyDto>().ReverseMap();
+            CreateMap<Unit, UnitDto>().ReverseMap();
+            CreateMap<Property, UpdatePropertyRequestDto>().ReverseMap();
+            CreateMap<Unit, UpdateUnitRequestDto>().ReverseMap();
         }
     }
 }

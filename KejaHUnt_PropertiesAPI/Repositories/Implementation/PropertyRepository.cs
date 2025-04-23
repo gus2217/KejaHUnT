@@ -1,5 +1,6 @@
 ﻿using KejaHUnt_PropertiesAPI.Data;
 using KejaHUnt_PropertiesAPI.Models.Domain;
+using KejaHUnt_PropertiesAPI.Models.Dto;
 using KejaHUnt_PropertiesAPI.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
 
@@ -45,10 +46,10 @@ namespace KejaHUnt_PropertiesAPI.Repositories.Implementation
             return await _dbContext.Properties.Include(x => x.Units).FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<Property?> UpdateAsync(Property property)
+        public async Task<Property?> UpdateAsync(int id, UpdatePropertyRequestDto property)
         {
             var existingProperty= await _dbContext.Properties.Include(x => x.Units)
-               .FirstOrDefaultAsync(x => x.Id == property.Id);
+               .FirstOrDefaultAsync(p => p.Id == id);
 
             if (existingProperty == null)
             {
